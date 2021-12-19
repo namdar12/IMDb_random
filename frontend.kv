@@ -1,0 +1,25 @@
+<FirstScreen>:
+    GridLayout:
+        cols: 1
+        padding: 10
+        spacing: 10
+        Image:
+            id: img
+            source:
+            size_hint_y: 0.8
+        Label:
+            size_hint_y: 0.1
+            id: moveInfo
+            text: 'Movie Information'
+        Button:
+            size_hint_y: 0.1
+            text: 'Random Movie'
+            on_press:root.set_labels()
+            on_press: root.set_image()
+
+
+<RootWidget>
+    FirstScreen:
+        id: first_screen
+        name: 'first_screen'
+
